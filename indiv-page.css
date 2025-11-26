@@ -1,0 +1,79 @@
+/* --- FULL PROJECT PAGE WRAPPER --- */
+.project-page {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- EXPANDED PROJECT CARD --- */
+.project-card-expanded {
+    background: rgba(15, 23, 42, 0.9);
+    border-radius: 24px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    padding: 40px 50px;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    color: #e5e7eb;
+}
+
+/* TITLE */
+.project-title-large {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #e5e7eb;
+}
+
+/* IMAGE */
+.project-img-large {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.project-desc-large {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+/* SUBHEADERS */
+.project-subheader {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #93c5fd;
+    font-size: 1.3rem;
+}
+
+/* BULLET LISTS */
+.project-bullets {
+    color: #cbd5e1;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* TECH STACK */
+.project-tech {
+    color: #e5e7eb;
+    margin-bottom: 30px;
+}
+
+/* BACK LINK */
+.project-back {
+    display: inline-block;
+    margin-top: 30px;
+    color: #60a5fa;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.project-back:hover {
+    color: #93c5fd;
+    transform: translateX(-4px);
+}

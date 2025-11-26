@@ -10,12 +10,29 @@
 
 </head>
 <body>
+    
     <header>
         <!-- <h1>Colin Lam</h1> -->
         <div class="page">
         <div class="card">
-            <img src="images/phish.jpg" alt="this is me" class="avatar">
-            <h1 class="name">Colin Lam </h1>
+            <img src="images/me.png" alt="this is me" class="avatar">
+
+
+            <h1 id="name" class="name">Colin Lam</h1>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+            <script>
+            anime({
+                targets: '#name',
+                opacity: [0, 1],
+                translateY: [20, 0],
+                easing: 'easeOutExpo',
+                duration: 1200
+            });
+            </script>
+
+
+            <!-- <h1 class="name">Colin Lam </h1> -->
             <p class="tagline">Computer Engineering Student • Robotics Research</p>
         
         <!-- GITHUB ICON -->
@@ -40,10 +57,29 @@
                     0 16 8c0-4.42-3.58-8-8-8z"/>
                 </svg>
             </a>
+
+
+             <a href="https://www.linkedin.com/in/colin-lam-668b5919b/" target="_blank" class="icon">
+                    <!-- <svg viewBox="0 0 16 16" fill="currentColor"> -->
+                <!-- <path d="M1.146 1.146C.513 1.78.513 2.82 1.146 3.454c.633.6
+                33 1.673.633 2.306 0 .633-.634.633-1.674 0-2.308C2.819.513 1.779.513 
+                1.146 1.146zM.5 5h3.3v10.5H.5V5zm5.1 0h3.157v1.43h.045c.44-.83 1.517-1.706 3.124-1.706 
+                3.341 0 3.954 2.2 3.954 5.06v5.716H12.58V10.29c0-1.474-.026-3.37-2.055-3.37-2.06 0-2.375 1.603-2.375
+                 3.26v5.32H5.6V5z"/> -->
+                    <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn" class="icon">
+
+                                 <!-- <path d="images/linkedin-svgrepo-com.svg"/> -->
+
+                </svg>
+            </a>
+
+
+
+
             <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
                 <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
-            </svg> -->
-            <!-- <a href="https://www.linkedin.com/in/colin-lam-668b5919b/" target="_blank" class="icon">
+            </svg>
+            <a href="https://www.linkedin.com/in/colin-lam-668b5919b/" target="_blank" class="icon">
                 <svg viewBox="0 0 16 16" fill="currentColor">
                     <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.42 107 0 
                     82.6 0 53.7A53.69 53.69 0 0 1 53.84 0c29.9 0 53.7 24.42 
@@ -62,6 +98,7 @@
     <!-- want to eventually make this scrollable -->
     <nav>
         <a href="#about">About me</a>
+        <a href="#experience">Experiences</a>
         <a href="#projects">Projects</a>
         <a href="#resume">Resume</a>
     </nav>
@@ -69,7 +106,119 @@
 
     <section id="about" class="container">
         <h2>About Me</h2>
-        <p>I am a student</p>
+        <p>I am a student and researcher at the University of Michigan interested in the application of Computer Architecture and Embedded systems to robotics!</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Experiences</h2>
+        
+
+        <div class="xp-card">
+        <!-- Left icon -->
+        <img src="images/stryker.png" class="xp-logo" alt="Stryker Logo">
+        <!-- Middle content -->
+        <div class="xp-content">
+            <h3 class="xp-title">Stryker Multidisciplinary Program</h3>
+            <p class="xp-subtitle"><i>Stryker Instruments</i></p>
+
+            <ul class="xp-list">
+                <li>Developing next generation ergonomic smoke evacuating electrosurgical pencil for encouraging widespread
+carcinogenic smoke evacuation adoption </li>
+                <li>Implemented modbus RTU/TCP communication protocols to interface embedded system with Stryker
+medical device control</li>
+                <!-- <li></li> -->
+            </ul>
+        </div>
+
+
+
+        <!-- Right info -->
+        <div class="xp-meta">
+            <div class="xp-location">Ann Arbor, MI, United States</div>
+            <div class="xp-date">December 2024 – Present</div>
+        </div>
+         <!-- Tech Stack -->
+        <div class="xp-tech-stack">
+            <!-- <span class="tech-label">Tech Stack:</span> -->
+            <img src="skills_icons/python.png" alt="python" class="tech-icon">
+            <img src="skills_icons/rpi.png" alt="rpi" class="tech-icon">
+            <!-- <img src="skills_icons/MANUFACTURING.webp" alt="MANNUFACTURING" class="tech-icon"> -->
+            <!-- <img src="skills_icons/unreal.svg" alt="Unreal Engine" class="tech-icon">
+            <img src="skills_icons/dds.png" alt="DDS" class="tech-icon"> -->
+        </div>
+
+        </div>
+
+        <div class="xp-card">
+        <!-- Left icon -->
+        <img src="images/agam.jpeg" class="xp-logo" alt="Agam Capital Logo">
+        <!-- Middle content -->
+        <div class="xp-content">
+            <h3 class="xp-title">Agam Capital</h3>
+            <p class="xp-subtitle"><i>Agam Capital Software Division</i></p>
+
+            <ul class="xp-list">
+                    <li>Privatized Large Language Models on company cloud infrastructure to comply with SOC2 standards</li>
+                    <li>Deployed Retrieval Augmented Generation LLM documentation tool to increase worker productivity</li>
+            </ul>
+        </div>
+
+        
+        <!-- Right info -->
+        <div class="xp-meta">
+            <div class="xp-location">Ann Arbor, MI, United States</div>
+            <div class="xp-date">Apr 2024 – August 2024</div>
+        </div>
+        
+        <!-- Tech Stack -->
+        <div class="xp-tech-stack">
+            <!-- <span class="tech-label">Tech Stack:</span> -->
+            <img src="skills_icons/python.png" alt="Python" class="tech-icon">
+            <img src="skills_icons/aws.webp" alt="EC2" class="tech-icon">
+            <!-- <img src="skills_icons/unreal.svg" alt="Unreal Engine" class="tech-icon">
+            <img src="skills_icons/dds.png" alt="DDS" class="tech-icon"> -->
+        </div>
+
+        </div>
+        
+
+       <div class="xp-card">
+            <!-- Left icon -->
+            <!-- <img src="images/um_robotics.png" class="xp-logo" alt="UM Robotics Logo"> -->
+            <img src="images/igmr.svg" class="xp-logo" alt="UM Robotics Logo">
+            <!-- Middle content -->
+            <div class="xp-content">
+                <h3 class="xp-title">IGMR Lab Research Assistant</h3>
+                <p class="xp-subtitle"><i>University of Michigan Robotics Department</i></p>
+
+                <ul class="xp-list">
+                    <li>Working on low latency virtual reality application for teleoperated ophthalmic robotic surgery project</li>
+                    <li>Implemented parallel rendering algorithms using CUDA and HLSL for Rendered Point Cloud and Optical
+Coherence Tomography volumes in 10 millisecond frame rendering time</li>
+                </ul>
+            </div>
+
+  
+
+            <!-- Right info -->
+            <div class="xp-meta">
+                <div class="xp-location">Ann Arbor, MI, United States</div>
+                <div class="xp-date">Apr 2023 – Present</div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="xp-tech-stack">
+                <!-- <span class="tech-label">Tech Stack:</span> -->
+                <img src="skills_icons/cpp.svg" alt="C++" class="tech-icon">
+                <img src="skills_icons/cuda.svg" alt="CUDA" class="tech-icon">
+                <img src="skills_icons/unreal.svg" alt="Unreal Engine" class="tech-icon">
+                <img src="skills_icons/dds.png" alt="DDS" class="tech-icon">
+            </div>
+
+        </div>
+
+        
+    
     </section>
 
     <section id="projects" class="container">
@@ -83,27 +232,42 @@
                 <p class="project-desc">
                     Made an RISC-V Out of Order Superscalar Processor as part of my EECS 470 (Advance Computer Architecture) class.
                 </p>
-                <a href="processor.html" class="project-link" target="_blank">View Project →</a>
-                <a href="processor.html" class="project-link" target="_blank">View Report →</a>
+                <a href="processor.html" class="project-link" target="_blank">View Project (In Progress) </a>
+                <br>
+                <a href="processor.html" class="project-link" target="_blank">View Report (In Progress)</a>
             </div>
 
             <div class="project-card">
                 <img src="images/submarine.jpg" alt="Submarine Project" class="project-img">
-                <h3 class="project-title">Submarine EECS 373</h3>
+                <h3 class="project-title">MBUS</h3>
                 <p class="project-desc">
                     Made an embedded submarine as part of my EECS 373 (Embedded Systems) class.
                 </p>
-                <a href="submarine.html" class="project-link" target="_blank">View Project →</a>
+                <a href="submarine.html" class="project-link" target="_blank">View Project </a>
             </div>
 
             <div class="project-card">
-                <img src="" alt="Something Something Something" class="project-img">
-                <h3 class="project-title">Something Something Something</h3>
+                <img src="images/poster_icon.png" alt="Low-Latency Virtual Reality Visualization of OCT
+                    Volumes for Teleoperated Robotic Microsurgery" class="project-img">
+                <h3 class="project-title">Low-Latency Virtual Reality Visualization of OCT
+                    Volumes for Teleoperated Robotic Microsurgery</h3>
                 <p class="project-desc">
-                    Something Something Something.
+                    Highlighted some of my research over my tenure as a research assistant for the IGMR lab.
                 </p>
-                <a href="submarine.html" class="project-link" target="_blank">View Project →</a>
+                <a href="poster.html" class="project-link" target="_blank">View Poster </a>
             </div>
+
+            <div class="project-card">
+                <img src="images/hovercraft.png" alt="Hovercraft" class="project-img">
+                <h3 class="project-title">Hovercraft: Team Go Big or Go Home</h3>
+                <p class="project-desc">
+                    Built a hovercraft as part of my freshman year engineering capstone project with some of my teammates
+                </p>
+                <a href="hovercraft.html" class="project-link" target="_blank">View Project Report </a>
+                <br>
+                <a href="hovercraft.html" class="project-link" target="_blank">View Presentation </a>
+            </div>
+
         </div>
 
     </section>
@@ -114,6 +278,7 @@
             Resume
         </a>  
         </h2>
+        <p>Feel free to look at my resume!</p>
               <!-- <p> Please see my</p> -->
         <!-- <iframe src="resumes/Colin_Resume_Nov.pdf" class="resume-frame"></iframe> -->
     </section>
