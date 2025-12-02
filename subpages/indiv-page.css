@@ -21,6 +21,7 @@
 /* TITLE */
 .project-title-large {
     font-size: 2.3rem;
+    font-family: Arial, sans-serif;
     margin-bottom: 20px;
     color: #e5e7eb;
 }
@@ -37,6 +38,7 @@
 /* DESCRIPTION */
 .project-desc-large {
     font-size: 1.05rem;
+    font-family: Arial, sans-serif;
     color: #cbd5e1;
     margin-bottom: 24px;
     line-height: 1.6;
@@ -48,6 +50,7 @@
     margin-bottom: 10px;
     color: #93c5fd;
     font-size: 1.3rem;
+    font-family: Arial, sans-serif;
 }
 
 /* BULLET LISTS */
@@ -55,12 +58,14 @@
     color: #cbd5e1;
     margin-left: 20px;
     margin-bottom: 20px;
+    font-family: Arial, sans-serif;
 }
 
 /* TECH STACK */
 .project-tech {
     color: #e5e7eb;
     margin-bottom: 30px;
+    font-family: Arial, sans-serif;
 }
 
 /* BACK LINK */
@@ -68,7 +73,8 @@
     display: inline-block;
     margin-top: 30px;
     color: #60a5fa;
-    font-weight: 600;
+    font-weight: 600;    
+    font-family: Arial, sans-serif;
     text-decoration: none;
     transition: 0.2s ease;
 }
